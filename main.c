@@ -12,10 +12,10 @@ stack_t *head = NULL;
 int main(int argc, char **argv)
 {
 	if (argc < 2 || argc >2)
-		error(1);
+		err(1);
 
-	free_stack(head);
+	open_file(argv[1]);
+	free_nodes();
 
 	return (EXIT_SUCCESS);
 }
-
