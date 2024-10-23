@@ -82,6 +82,7 @@ void mul_nodes(stack_t **stack, unsigned int line_number)
 
 	(*stack) = (*stack)->next;
 	sum = (*stack)->n * (*stack)->prev->n;
+	(*stack)->n = sum;
 	free((*stack)->prev);
 	(*stack)->prev = NULL;
 }
